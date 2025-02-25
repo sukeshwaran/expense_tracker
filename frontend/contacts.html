@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+    <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+
+    </nav>
+
+    <section class="form-container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p>If you have any questions or feedback, feel free to reach out to us.</p>
+
+        <form id="contactForm" class="contact-form">
+            <label for="contact-username">Name:</label>
+            <input type="text" id="contact-username" required class="input-field">
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" required class="input-field">
+
+            <label for="contact-message">Message:</label>
+            <textarea id="contact-message" rows="5" required class="input-field"></textarea>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <div id="responseMessage" class="response-message hidden">
+            ✅ Message sent successfully!
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Expense Tracker. All rights reserved.
+    </footer>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
